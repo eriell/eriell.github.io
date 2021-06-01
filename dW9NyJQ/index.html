@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 14%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: -172px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+        <img src="img/IMG_1494.jpg" alt="1" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/IMG_1495.jpg" alt="2" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/IMG_1504.jpg" alt="3" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/IMG_1496.jpg" alt="4" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/IMG_1488.jpg" alt="5" style="width:100%" onclick="myFunction(this);">
+      </div>
+    
+  <div class="column">
+    <img src="img/IMG_1485.jpg" alt="6" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/IMG_1491.jpg" alt="7" style="width:100%" onclick="myFunction(this);">
+    </div>
+  
+  
+  
+</div>
+
+<div class="container">
+  <!--<span onclick="this.parentElement.style.display='none'" class="closebtn" style="padding-left: auto; padding-right: auto;">&times;</span>-->
+  <img id="expandedImg" style="max-width:800px;">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  //imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
