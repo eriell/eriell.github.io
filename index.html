@@ -1,1 +1,56 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #020507;
+          color: white;
+        }
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      img {
+        border-radius: 50%;
+        max-width: 250px;
+        border: 7px solid #f0f0f0;
+        filter: drop-shadow(0 0 0.75rem #82b2dd);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="img/backdrop.jpg" />
+    </div>
+  </body>
+</html>
