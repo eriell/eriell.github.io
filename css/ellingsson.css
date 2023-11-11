@@ -1,0 +1,13 @@
+.mainImage {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.mainImage img {
+    
+    border-radius: 50% !important; 
+    max-width: 250px !important; 
+    border: 7px solid #f0f0f0 !important; 
+    filter: drop-shadow(0 0 0.75rem #82b2dd) !important;
+}
