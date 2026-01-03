@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on ellingsson.se</title>
+    <title>ellingsson.se</title>
     <link>https://ellingsson.se/</link>
-    <description>Recent content in Home on ellingsson.se</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <description>Recent content on ellingsson.se</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <atom:link href="https://ellingsson.se/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
